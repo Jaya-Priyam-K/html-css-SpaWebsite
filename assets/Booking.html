@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Lora;
+            margin: 0;
+            padding: 0;
+            background-color: #e9e2d5;
+            color: #A0937D;
+            position: absolute;
+            top: auto;
+            width: 100%;
+        }
+
+        header {
+            background-color: white;
+            color: #A0937D;;
+            font-family: Lora;
+            box-shadow: 0 0 10px rgba(110, 56, 9, 0.422);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-bottom: 2.6rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(110, 56, 9, 0.422);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+
+        form label {
+            margin-bottom: 0.5rem;
+            text-align: left;
+            font-family: Lora;
+            color: #8c5757;
+        }
+
+        form input, form select, form button {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f1ebe1;
+            font-family: Lora;
+            color: #966b6b;
+            box-shadow: 0 0 10px rgba(184, 163, 144, 0.422);
+        }
+
+        form button {
+            background-color:  #A0937D;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #beb4a3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #A0937D;
+            color: white;
+            box-shadow: 0 0 10px rgba(110, 56, 9, 0.422);
+        }
+
+        #contact {
+            height: 2.5rem;
+            background-color: #A0937D;
+            padding: 0%;
+        }
+
+        p#foot {
+            color: white;
+        }
+
+        .brand {
+            text-align: center;
+        }
+
+        .brand h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .brand hr {
+            width: 100px;
+            margin: 5px 0;
+        }
+
+        .brand p {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color:#666; 
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .icons a {
+            margin-left: 10px;
+            color: #A0937D;
+            padding: 5px;
+            font-size: 1.4rem;
+        }
+
+        .icons a:hover {
+            color: #666; 
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            font-size: 60px;
+            color: #1e964a; 
+        }
+
+        .contact-icons{
+            color: white;
+            font-size: 1.5rem;
+            padding: 5px;
+        }
+
+        #con{
+            margin-left: 45%;
+        }
+
+        .brand>p{
+            font-size: 1.55rem;
+        }
+
+        header .brand img {
+            padding-left: 5%;
+            width: 300px;
+            height: auto; 
+        }
+
+        ::selection {
+            background-color: #879066; 
+            color: #ffffff;       
+        }
+            
+        .foot-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 80%;
+            margin-left: 10%;
+        }
+
+        .foot{
+            margin: 1rem;
+            padding: 1rem;
+            background-color:#A0937D;
+            border-radius: 8px;
+            flex: 1 1 20%; 
+            box-sizing: border-box;
+        }
+
+        footer hr{
+            width: 80%;
+        }
+
+        .footp, .foot p{
+            font-family: "Cormorant Garamond" , static;
+            font-size: 20px;
+
+        }
+
+        h2{
+            font-size: 2rem;
+            color:#90836d;
+
+        }
+
+        .hover-effect {
+            transition: transform 0.3s ease; 
+            display: inline-block; 
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.1); 
+        }
+
+
+        
+    </style>
+</head>
+<body>
+
+    <a href="https://www.whatsapp.com/" class="whatsapp hover-effect"><i class="fab fa-whatsapp"></i></a>
+
+    <div id="contact">
+        <div id="con">
+            <a class="contact-icons" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a class="contact-icons" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a class="contact-icons" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+            <a class="contact-icons" href="https://in.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        </div> 
+    </div>
+
+    <header>
+        <div class="brand">
+            <a href="../index.html"><img src="./images/newhlogo.png" alt="Logo" class="hover-effect"/></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="hover-effect" href="../index.html#services">Services</a></li>
+                <li><a class="hover-effect" href="../index.html#retreats">Wellness Treats</a></li>
+                <li>
+                    <div class="icons">
+                        <a href="../index.html#home"><i class="fas fa-home"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="booking">
+        <h2>Online Booking</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="hover-effect" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="hover-effect" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" class="hover-effect" required>
+                    <option value="massage">Body Massage</option>
+                    <option value="aromatherapy">Aromatherapy</option>
+                    <option value="facial">Facial Treatments</option>
+                    <option value="mani&pedi">Manicures and Pedicures</option>
+                    <option value="scalp">Scalp Massage</option>
+                    <option value="reflexology">Reflexology</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="retreat">Select Retreat:</label>
+                <select id="retreat" name="retreat" class="hover-effect" required>
+                    <option value="getaway">Weekend Getaway</option>
+                    <option value="detox">Detox Retreat</option>
+                    <option value="yoga">Yoga Retreat</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" class="hover-effect" required>
+            </div>
+
+            <button type="submit" class="hover-effect">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p class="footp">Waves Wellness , City</p><brk />
+        <p class="footp">123, ABC Street, XYZ Road, City, State - 987654</p>
+        <div class="foot-container">
+            <div class="foot">
+                <i class="fas fa-envelope"></i>
+                <p>booking@waveswellness.in</p>
+            </div>
+            <div class="foot">
+                <i class="fas fa-envelope"></i>
+                <p>reservation@waveswellness.in</p>
+            </div>
+            <div class="foot">
+                <i class="fas fa-phone"></i>
+                <p>0422 123 4567 | Landline</p>
+            </div>
+            <div class="foot">
+                <i class="fas fa-mobile"></i>
+                <p>+91 12345 67890 | Mobile</p>
+            </div> 
+        </div>
+        <hr />
+        <p>&copy; 2024 Waves Wellness Spa. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

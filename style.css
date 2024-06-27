@@ -1,0 +1,273 @@
+body {
+    font-family: "Cormorant Garamond" , static;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e2d5;
+    color: #A0937D;
+    position: absolute;
+    top: auto;
+}
+
+header {
+    background-color: white;
+    color: #987070;
+    font-family: Lora;
+    box-shadow: 0 0 10px rgba(110, 56, 9, 0.422);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.service-container, .retreat-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.service, .retreat {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(110, 56, 9, 0.422);
+    flex: 1 1 20%; /* Adjust the flex-basis percentage as needed */
+    box-sizing: border-box;
+}
+
+.service > img, .retreat > img {
+    width: 90%;
+    margin-top: 0.8rem; 
+    box-shadow: 0 0 10px rgba(138, 69, 9, 0.295);
+    border-radius: 90%;
+}
+
+#Booking {
+    background-color: #A0937D;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 15%;
+    border-radius: 8px;
+    padding: 0.6rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: Lora;
+    box-shadow: 0 0 10px rgba(110, 56, 9, 0.422);
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+#Booking a {
+    color: white; 
+    text-decoration: none; 
+    display: block; 
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color:  #A0937D;
+    color: white;
+    box-shadow: 0 0 10px rgba(110, 56, 9, 0.422);
+}
+
+#contact {
+    height: 2.5rem;
+    background-color:  #A0937D;
+    padding: 0%;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.brand hr {
+    width: 100px;
+    margin: 5px 0;
+}
+
+.brand p {
+    font-size: 16px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:  #3d532d; 
+    font-size: 20px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    margin-left: 13px;
+    color: #A0937D;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.icons a:hover {
+    color: #879066; 
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    font-size: 60px;
+    color: #1e964a; 
+}
+
+.contact-icons{
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#con{
+    margin-left: 45%;
+    padding-top: 6px;
+}
+
+.brand>p{
+    font-size: 1.55rem;
+}
+
+#home{
+    background-color: #d4dcc2;
+}
+#home p{
+    color: #3d532d;
+}
+
+header .brand img {
+    padding-left: 5%;
+    width: 400px; 
+    height: auto; 
+}
+
+#home img {
+    width: 300px;
+    height: auto; 
+}
+
+p{
+    font-family: Nunito;
+}
+
+::selection {
+    background-color: #879066; 
+    color: #ffffff;            
+}
+
+h2, h3{
+    font-size: 1.5rem;
+    color: #7d6c50;
+}
+
+#commitments{
+    background-color: #d4dcc2;
+    color:#6e7c39;
+}
+
+.commitment-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.commitment{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #d4dcc2;
+    border-radius: 8px;
+    flex: 1 1 10%; 
+    box-sizing: border-box;
+}
+
+.commitment > img{
+    width: 100%;
+    margin-top: 0.8rem; 
+}
+
+
+
+h4{
+    font-size: 1.5rem;
+    color:#5a6533;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.foot{
+    margin: 1rem;
+    padding: 1rem;
+    background-color:#A0937D;
+    border-radius: 8px;
+    flex: 1 1 20%; 
+    box-sizing: border-box;
+}
+
+footer hr{
+    width: 80%;
+}
+
+.footp, .foot p{
+    font-family: "Cormorant Garamond" , static;
+    font-size: 20px;
+
+}
+
+.hover-effect {
+    transition: transform 0.3s ease; 
+    display: inline-block; 
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); 
+}
+
+#Booking:hover {
+    transform: scale(1.1); 
+}
